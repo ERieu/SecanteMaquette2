@@ -33,12 +33,13 @@ header h1 {
   cursor: pointer ;
 }
 
-#years-selector {
+#year-selector {
   text-align: center;
-  padding: 50px;
+  padding-top: 5px;
+  padding-bottom: 30px;
 }
 
-#years-selector select {
+#year-selector select {
   font-size: 20px;
 }
 

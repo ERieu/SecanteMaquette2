@@ -1,12 +1,14 @@
 [
     {
         "id": "tour-eiffel",
+        "year": "2024",
         "title": "1er étage de la Tour Eiffel",
         "place": "Paris",
         "images": ["images/tourEiffel1.jpg", "images/tourEiffel2.jpg", "images/tourEiffel3.jpg", "images/tourEiffel4.jpg", "images/tourEiffel5.jpg", "images/tourEiffel6.jpg"]
     },
     {
         "id": "guerlain",
+        "year": "2023",
         "title": "Guerlain",
         "place": "Champs Elysées Paris",
         "prime_contractor": "PETER MARINO",
@@ -17,6 +19,7 @@
     },
     {
         "id": "bayerischer-hof",
+        "year": "2022",
         "title": "Bayerischer Hof Hotel",
         "place": "Munich",
         "description": "",
@@ -27,6 +30,7 @@
     },
     {
         "id": "connaught-hotel",
+        "year": "2021",
         "title": "The Connaught Hotel",
         "images": ["images/connaughtHotel1.png", "images/connaughtHotel2.png", "images/connaughtHotel3.png"]
     },
@@ -37,6 +41,7 @@
     },
     {
         "id": "mediathequeSaint-malo",
+        "year": "2024",
         "title": "Médiathèque de Saint-Malo",
         "place": "Saint-Malo",
         "lighting-engineer": "8/18",
@@ -55,6 +60,7 @@
     },
     {
         "id": "louis-vuitton-doha",
+        "year": "2024",
         "title": "Louis Vuitton",
         "place": "Doha",
         "descritption": "",
@@ -68,6 +74,7 @@
     },
     {
         "id": "historial-charles-de-gaulle",
+        "year": "2022",
         "title": "Historial Charles de Gaulle",
         "place": "Musée des Invalides, Paris",
         "customer":"MUSEE DES INVALIDES",
@@ -131,6 +138,7 @@
     },
     {
         "id": "philharmonie-paris",
+        "year": "2023",
         "title": "Cité de la musique - Philharmonie de Paris",
         "place": "Paris",
         "prime_contractor": "AJN",
@@ -141,11 +149,13 @@
     },
     {
         "id": "abbaye-fontevrault",
+        "year": "2021",
         "title": "Abbaye de Fontevrault",
         "images": ["images/abbayeFontevrault1.png", "images/abbayeFontevrault2.png", "images/abbayeFontevrault3.png"]
     },
     {
         "id": "le-bon-marche",
+        "year": "2021",
         "title": "Le Bon Marche",
         "place": "Paris",
         "lighting-engineer": "DISTYLIGHT",
@@ -154,18 +164,21 @@
     },
     {
         "id": "lv-shangai",
+        "year": "2020",
         "title": "Louis Vuitton",
         "place": "Shangai",
         "images": ["images/lv-shangai1.png", "images/lv-shangai2.png", "images/lv-shangai3.png", "images/lv-shangai4.png"]
     },
     {
         "id": "parc-des-princes",
+        "year": "2020",
         "title": "Parc des princes",
         "place": "Paris",
         "images": ["images/parc-des-princes.jpg"]
     },
     {
         "id": "dior-nw",
+        "year": "2023",
         "title": "Dior",
         "place": "Soho, New-York",
         "description": "",
@@ -177,6 +190,7 @@
     },
     {
         "id": "lv-istanbul",
+        "year": "2022",
         "title": "Louis Vuitton",
         "place": "Istanbul",
         "images": ["images/lv-istanbul1.jpg", "images/lv-istanbul2.jpg"]
