@@ -145,7 +145,7 @@
         "lighting_engineer": "L'OBSERVATOIRE INTERNATIONAL",
         "installater": "INEO",
         "lighting_type":"Eclairage intérieur",
-        "images": ["images/philharmonieParis1.jpg", "images/philharmonieParis2.JPG", "images/philharmonieParis3.JPG", "images/philharmonieParis4.jpg"]
+        "images": ["images/philharmonieParis1.JPG", "images/philharmonieParis2.JPG", "images/philharmonieParis3.JPG", "images/philharmonieParis4.jpg"]
     },
     {
         "id": "abbaye-fontevrault",
