@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     gridContainer.appendChild(gridItem);
                 });
 
-                initLazyLoading();
+                // Forcer le recalcul de la taille après le chargement des images
+                adjustGridItemSizes();
                 initModals();
             }
 
@@ -38,13 +39,21 @@ document.addEventListener('DOMContentLoaded', function() {
         gridItem.classList.add('grid-item');
 
         const img = document.createElement('img');
-        img.dataset.src = item.images[0];
+        img.src = item.images[0];
         img.alt = item.title;
         img.dataset.id = item.id;
-        img.classList.add('lazy-image');
+        img.loading = "lazy";
+
+        img.addEventListener('load', function() {
+            adjustGridItemSize(gridItem, img);
+        });
+
+        img.addEventListener('error', function() {
+            console.error('Erreur de chargement de l\'image:', img.src);
+        });
 
         gridItem.innerHTML = `
-            <img class="lazy-image" data-src="${item.images[0]}" alt="${item.title}" data-id="${item.id}">
+            <img src="${item.images[0]}" alt="${item.title}" data-id="${item.id}" loading="lazy">
             <div class="infos">
                 <h2>${item.title}</h2>
                 <div class="infos-buttons">
@@ -61,31 +70,36 @@ document.addEventListener('DOMContentLoaded', function() {
         return gridItem;
     }
 
-    function initLazyLoading() {
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    img.src = img.dataset.src;
-                    img.classList.remove('lazy-image');
-                    observer.unobserve(img);
-                }
-            });
-        });
+    function adjustGridItemSize(gridItem, img) {
+        const aspectRatio = img.naturalWidth / img.naturalHeight;
+        if (aspectRatio > 2) {
+            gridItem.classList.add('grid-item-large');
+        } else if (aspectRatio < 1) {
+            gridItem.classList.add('grid-item-tall');
+        }
+    }
 
-        document.querySelectorAll('.lazy-image').forEach(img => {
-            observer.observe(img);
+    function adjustGridItemSizes() {
+        const images = document.querySelectorAll('.grid-item img');
+        images.forEach(img => {
+            if (img.complete) {
+                adjustGridItemSize(img.closest('.grid-item'), img);
+            } else {
+                img.addEventListener('load', function() {
+                    adjustGridItemSize(img.closest('.grid-item'), img);
+                });
+            }
         });
     }
 
     function initModals() {
-        gridContainer.addEventListener('click', function(event) {
-            if (event.target.closest('.extend-btn')) {
+        document.querySelectorAll('.extend-btn').forEach(button => {
+            button.addEventListener('click', function(event) {
                 event.preventDefault();
                 const imgSrc = event.target.closest('.grid-item').querySelector('img').src;
                 modalImg.src = imgSrc;
                 modal.style.display = 'flex';
-            }
+            });
         });
 
         closeModal.addEventListener('click', () => {
