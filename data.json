@@ -1,0 +1,184 @@
+[
+    {
+        "id": "tour-eiffel",
+        "title": "1er étage de la Tour Eiffel",
+        "place": "Paris",
+        "images": ["images/tourEiffel1.jpg", "images/tourEiffel2.jpg", "images/tourEiffel3.jpg", "images/tourEiffel4.jpg", "images/tourEiffel5.jpg", "images/tourEiffel6.jpg"]
+    },
+    {
+        "id": "guerlain",
+        "title": "Guerlain",
+        "place": "Champs Elysées Paris",
+        "prime_contractor": "PETER MARINO",
+        "lighting_engineer":"L'OBSERVATOIRE INTERNATIONAL",
+        "installater": "MELLOT",
+        "lighting_type": "Eclairage intérieur",
+        "images": ["images/guerlain1.jpg", "images/guerlain2.jpg", "images/guerlain3.jpg", "images/guerlain4.jpg"]
+    },
+    {
+        "id": "bayerischer-hof",
+        "title": "Bayerischer Hof Hotel",
+        "place": "Munich",
+        "description": "",
+        "prime_contractor": "PATRICK JONIN",
+        "lighting_engineer": "L'OBSERVATOIRE INTERNATIONAL",
+        "lighting_type": "Eclairage intérieur",
+        "images": ["images/bayerischerHof1.jpg", "images/bayerischerHof2.jpg", "images/bayerischerHof3.png", "images/bayerischerHof4.png", "images/bayerischerHof5.png"]
+    },
+    {
+        "id": "connaught-hotel",
+        "title": "The Connaught Hotel",
+        "images": ["images/connaughtHotel1.png", "images/connaughtHotel2.png", "images/connaughtHotel3.png"]
+    },
+    {
+        "id": "symphonieOfTheSea",
+        "title": "Symphonie of the Sea",
+        "images": ["images/symphonieOfTheSea1.png", "images/symphonieOfTheSea2.png", "images/symphonieOfTheSea3.png", "images/symphonieOfTheSea4.png", "images/symphonieOfTheSea4.png", "images/symphonieOfTheSea5.png", "images/symphonieOfTheSea6.png", "images/symphonieOfTheSea7.png", "images/symphonieOfTheSea8.png"]
+    },
+    {
+        "id": "mediathequeSaint-malo",
+        "title": "Médiathèque de Saint-Malo",
+        "place": "Saint-Malo",
+        "lighting-engineer": "8/18",
+        "installater": "CEGELEC",
+        "images": ["images/mediathequeSaint-malo1(818_SML1_CHANTIER_Photos 02_Copyright David Charetier).jpg", "images/mediathequeSaint-malo2.jpg", "images/mediathequeSaint-malo3.jpg", "images/mediathequeSaint-malo4.jpg"]
+    },
+    {
+        "id": "holiday-inn",
+        "title": "Holiday Inn",
+        "place": "Paris",
+        "prime_contractor": "HARRY GANECHAVEZ",
+        "lighting_engineer": "OUAM",
+        "installater": "EIFFAGE",
+        "lighting_type": "Eclairage intérieur et extérieur",
+        "images": ["images/holiday-inn-express-paris-2532450872-4x3.jpg"]
+    },
+    {
+        "id": "louis-vuitton-doha",
+        "title": "Louis Vuitton",
+        "place": "Doha",
+        "descritption": "",
+        "images": ["images/LV-doha1.jpg", "images/LV-doha2.jpg", "images/LV-doha3.jpg", "images/LV-doha4.jpg", "images/LV-doha5.jpg"]
+    },
+    {
+        "id": "carre-senart",
+        "title": "Carré Sénart",
+        "description": "Carré Sénart est un centre commercial situé à Lieusaint, en France.",
+        "images": ["images/CARRE SENART 1.JPG", "images/CARRE SENART 2.JPG", "images/CARRE SENART 3.JPG", "images/CARRE SENART 4.JPG"]
+    },
+    {
+        "id": "historial-charles-de-gaulle",
+        "title": "Historial Charles de Gaulle",
+        "place": "Musée des Invalides, Paris",
+        "customer":"MUSEE DES INVALIDES",
+        "prime_contractor": "MOATTI & RIVIERE",
+        "lighting_engineer": "8/18",
+        "installater": "EI",
+        "lighting_type":"Eclairage intérieur",
+        "images": ["images/Historial-Charles-de-Gaulle_Paris(1).jpg", "images/Historial-Charles-de-Gaulle_Paris(2).jpg"]
+    },
+    {
+        "id": "fondation-louis-vuitton",
+        "title": "Fondation Louis Vuitton",
+        "place": "Paris",
+        "description": "Conçu par l'architecte américano-canadien Frank Gehry, le bâtiment de la fondation Louis Vuitton se présente comme un vaisseau de verre implanté au cœur du Jardin d’Acclimatation du Bois de Boulogne à Paris. Secante réalise l’éclairage de la maquette présentée à Paris. Seize autres maquettes, exposées à travers le monde, seront à mettre en lumière.",
+        "prime_contractor": "LOUIS VUITTON",
+        "creator": "TACTILE STUDIO",
+        "lighting_engineer": "OBS NY",
+        "lighting_type": "Eclairage intérieur",
+        "images": ["images/maquette-LV-1024x768.jpg"]
+    },
+    {
+        "id": "frederic-malle",
+        "title": "Parfums Frédéric Malle",
+        "place": "Londre",
+        "description": "Un parfumeur iconoclaste et des architectes audacieux : Frédéric Malle et Jakob+MacFarlane ont uni leurs talents pour ouvrir cette quatrième adresse parisienne. Secante réalise les luminaires. …une expérience spatiale aux délicieuses fragrances.",
+        "lighting_type": "Eclairage intérieur",
+        "images": ["images/fredericMalle1.png", "images/fredericMalle2.png", "images/fredericMalle3.png", "images/fredericMalle4.png", "images/fredericMalle5.png", "images/fredericMalle6.png"]
+    },
+    {
+        "id": "louis-vuitton-londre",
+        "title": "Louis Vuitton",
+        "place": "Londre",
+        "description": "",
+        "images": ["images/LV-new-bond-street1.jpg", "images/LV-new-bond-street2.jpg", "images/LV-new-bond-street3.jpg", "images/LV-new-bond-street4.jpg"]
+    },
+    {
+        "id": "groupe-foyer",
+        "title": "Groupe Foyer",
+        "place": "Luxembourg",
+        "images": ["images/groupeFoyer1.png", "images/groupeFoyer2.png", "images/groupeFoyer3.png", "images/groupeFoyer4.png"]
+    },
+    {
+        "id": "les-haras",
+        "title": "Les Haras - restaurant",
+        "place": "Strasbourg",
+        "prime_contractor": "LES HARAS DE STRASBOURG",
+        "lighting_engineer": "L'OBSERVATOIRE INTERNATIONAL",
+        "installater": "STUDIO",
+        "lighting_type": "Eclairage intérieur",
+        "images": ["images/lesHaras1.jpg", "images/lesHaras2.jpg", "images/lesHaras3.jpg"]    
+    },
+    {
+        "id": "louisXV-AD",
+        "title": "Le Louis XV - Alain Ducasse à l'Hôtel de Paris",
+        "place": "Monte-Carlo",
+        "prime_contractor": "SBM ALAIN DUCASSE",
+        "lighting_engineer": "L'OBSERVATOIRE INTERNATIONAL",
+        "installater": "MES",
+        "lighting_type": "Eclairage intérieur",
+        "images": ["images/Alain-Ducasse-Hôtel-de-Paris-PierreMonetta-1200x1800.jpg", "images/ducasse2.jpg"]
+    },
+    {
+        "id": "philharmonie-paris",
+        "title": "Cité de la musique - Philharmonie de Paris",
+        "place": "Paris",
+        "prime_contractor": "AJN",
+        "lighting_engineer": "L'OBSERVATOIRE INTERNATIONAL",
+        "installater": "INEO",
+        "lighting_type":"Eclairage intérieur",
+        "images": ["images/philharmonieParis1.JPG", "images/philharmonieParis2.JPG", "images/philharmonieParis3.JPG", "images/philharmonieParis4.jpg"]
+    },
+    {
+        "id": "abbaye-fontevrault",
+        "title": "Abbaye de Fontevrault",
+        "images": ["images/abbayeFontevrault1.png", "images/abbayeFontevrault2.png", "images/abbayeFontevrault3.png"]
+    },
+    {
+        "id": "le-bon-marche",
+        "title": "Le Bon Marche",
+        "place": "Paris",
+        "lighting-engineer": "DISTYLIGHT",
+        "installater": "MBA",
+        "images": ["images/leBonMarche1.png", "images/leBonMarche2.png", "images/leBonMarche3.png", "images/leBonMarche4.png"]
+    },
+    {
+        "id": "lv-shangai",
+        "title": "Louis Vuitton",
+        "place": "Shangai",
+        "images": ["images/lv-shangai1.png", "images/lv-shangai2.png", "images/lv-shangai3.png", "images/lv-shangai4.png"]
+    },
+    {
+        "id": "parc-des-princes",
+        "title": "Parc des princes",
+        "place": "Paris",
+        "images": ["images/parc-des-princes.jpg"]
+    },
+    {
+        "id": "dior-nw",
+        "title": "Dior",
+        "place": "Soho, New-York",
+        "description": "",
+        "prime_contractor": "DIOR COUTURE",
+        "lighting_engineer": "L'OBSERVATOIRE INTERNATIONAL",
+        "installater": "IDW",
+        "lighting_type": "Eclairage intérieur",
+        "images": ["images/dior-nw1.jpg", "images/dior-nw2.jpg", "images/dior-nw3.jpg"]
+    },
+    {
+        "id": "lv-istanbul",
+        "title": "Louis Vuitton",
+        "place": "Istanbul",
+        "images": ["images/lv-istanbul1.jpg", "images/lv-istanbul2.jpg"]
+    }
+]
