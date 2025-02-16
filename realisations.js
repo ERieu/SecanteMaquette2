@@ -112,4 +112,17 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    function adjustGridItemSizes() {
+        const images = document.querySelectorAll('.grid-item img');
+        images.forEach(img => {
+            if (img.complete) {
+                requestAnimationFrame(() => adjustGridItemSize(img.closest('.grid-item'), img));
+            } else {
+                img.addEventListener('load', function() {
+                    requestAnimationFrame(() => adjustGridItemSize(img.closest('.grid-item'), img));
+                });
+            }
+        });
+    }
 });
