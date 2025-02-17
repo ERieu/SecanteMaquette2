@@ -7,17 +7,19 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     let imageData = await fetchData();
 
-    function fetchData() {
+    async function fetchData() {
         const cache = localStorage.getItem('imageData');
-        if (cache) return Promise.resolve(JSON.parse(cache));
+        if (cache) return JSON.parse(cache);
 
-        return fetch('data.json')
-            .then(response => response.json())
-            .then(data => {
-                localStorage.setItem('imageData', JSON.stringify(data));
-                return data;
-            })
-            .catch(error => console.error('Erreur JSON:', error));
+        try {
+            const response = await fetch('data.json');
+            const data = await response.json();
+            localStorage.setItem('imageData', JSON.stringify(data));
+            return data;
+        } catch (error) {
+            console.error('Erreur JSON:', error);
+            return [];
+        }
     }
 
     function displayImagesByYear(year) {
@@ -31,35 +33,41 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
 
         gridContainer.appendChild(fragment);
-
-        setTimeout(adjustGridItemSizes, 50);
     }
 
     function createGridItem(item) {
         const gridItem = document.createElement('div');
         gridItem.classList.add('grid-item');
 
-        // Réserver l'espace avec une div "squelette"
-        gridItem.innerHTML = `
-            <div class="skeleton" style="width:${item.width}px; height:${item.height}px"></div>
-        `;
+        // Vérifier que les dimensions existent, sinon définir des valeurs par défaut
+        const imgWidth = item.width || 300;
+        const imgHeight = item.height || 200;
 
+        // Ajouter un squelette pour éviter le CLS
+        const skeleton = document.createElement('div');
+        skeleton.classList.add('skeleton');
+        skeleton.style.width = imgWidth + 'px';
+        skeleton.style.height = imgHeight + 'px';
+
+        gridItem.appendChild(skeleton);
+
+        // Créer l'image
         const img = new Image();
         img.src = item.images[0];
         img.alt = item.title;
         img.dataset.id = item.id;
-        img.width = item.width;
-        img.height = item.height;
+        img.width = imgWidth;
+        img.height = imgHeight;
         img.loading = "lazy";
 
-        img.onerror = () => {
-            img.src = 'icones/image-placeholder.png';
-        };
-
         img.onload = function () {
-            gridItem.innerHTML = ''; // Retire le skeleton
+            gridItem.removeChild(skeleton); // Supprimer le squelette
             gridItem.appendChild(img);
             adjustGridItemSize(gridItem, img);
+        };
+
+        img.onerror = function () {
+            img.src = 'icones/image-placeholder.png';
         };
 
         return gridItem;
@@ -74,17 +82,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
     }
 
-    function adjustGridItemSizes() {
-        document.querySelectorAll('.grid-item img').forEach(img => {
-            if (img.complete) {
-                adjustGridItemSize(img.closest('.grid-item'), img);
-            } else {
-                img.onload = () => adjustGridItemSize(img.closest('.grid-item'), img);
-            }
-        });
-    }
-
-    // Délégation d'événement pour éviter d'attacher trop d'écouteurs
     gridContainer.addEventListener('click', function (event) {
         const btn = event.target.closest('.extend-btn');
         if (!btn) return;
