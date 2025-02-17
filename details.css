@@ -67,8 +67,8 @@ header h1 {
 }
 
 .thumbnail-container {
-    max-width: 125px;
-    max-height: 125px;
+    width: 125px;
+    height: 125px;
 }
 
 .thumbnail {
@@ -86,39 +86,58 @@ header h1 {
 }
 
 .info-container {
-    line-height: 25px;
+    line-height: 30px;
     justify-content: center;
     align-items: center;
     flex: 1;
-    max-width: fit-content;  
+    max-width: fit-content; 
 }
 
-h1 {
+.info-container h1 {
     font-size: 28px;
-    margin-bottom: 0.5em;
-    text-align: left;
+    text-align: left; 
 }
 
-p {
+.info-container p {
     margin: 5px 0;
-    font-size: 20px;
-    text-align: left;
-    margin-bottom: 0.5em;
+    font-size: 24px;
+    text-align: left; 
 }
 
 #detail-place {
     font-size: 24px;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 750px) {
     .container {
         flex-direction: column;
         text-align: center;
     }
 
     .info-container {
-        padding-top: 10px;
+        padding-top: 30px;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        max-width: fit-content;  
+
     }
 
+    .info-container h1 {
+        text-align: center; 
+    }
+
+    #detail-place {
+        text-align: center;
+    }
+
+    .info-container p {
+        text-align: left;
+    }
+
+    .thumbnail-container {
+        width: 100px;
+        height: 100px;
+    }
 }
