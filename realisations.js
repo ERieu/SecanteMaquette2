@@ -1,75 +1,115 @@
-document.addEventListener('DOMContentLoaded', async function () {
+document.addEventListener('DOMContentLoaded', function() {
     const gridContainer = document.getElementById('grid-container');
     const yearSelect = document.getElementById('year-select');
     const modal = document.getElementById('image-modal');
     const modalImg = document.getElementById('modal-image');
     const closeModal = document.querySelector('.close-btn');
 
-    console.log("Grid container trouvé ?", gridContainer);
-    console.log("Select année trouvé ?", yearSelect);
+    // Charger le fichier JSON
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            // Fonction pour afficher les images en fonction de l'année sélectionnée
+            function displayImagesByYear(year) {
+                gridContainer.innerHTML = '';
+                const filteredData = year === 'all' ? data : data.filter(item => item.year === year);
 
-    let imageData = await fetchData();
+                filteredData.forEach(item => {
+                    const gridItem = createGridItem(item);
+                    gridContainer.appendChild(gridItem);
+                });
 
-    async function fetchData() {
-        try {
-            const response = await fetch('data.json');
-            const data = await response.json();
-            console.log("Données chargées :", data); // Vérifier si les données sont bien récupérées
-            return data;
-        } catch (error) {
-            console.error('Erreur JSON:', error);
-            return [];
-        }
-    }
+                // Forcer le recalcul de la taille après le chargement des images
+                adjustGridItemSizes();
+                initModals();
+            }
 
-    function displayImagesByYear(year) {
-        console.log("Affichage des images pour l'année :", year);
-        gridContainer.innerHTML = '';
+            // Afficher les images pour l'année par défaut
+            displayImagesByYear(yearSelect.value);
 
-        const filteredData = year === 'all' ? imageData : imageData.filter(item => item.year === year);
-        console.log("Images filtrées :", filteredData);
-
-        if (filteredData.length === 0) {
-            console.warn("Aucune image trouvée pour cette année.");
-        }
-
-        const fragment = document.createDocumentFragment();
-        filteredData.forEach(item => {
-            const gridItem = createGridItem(item);
-            fragment.appendChild(gridItem);
-        });
-
-        gridContainer.appendChild(fragment);
-    }
+            // Ajouter un écouteur d'événements pour le changement d'année
+            yearSelect.addEventListener('change', function() {
+                displayImagesByYear(yearSelect.value);
+            });
+        })
+        .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
 
     function createGridItem(item) {
-        console.log("Création de l'élément pour :", item.title);
         const gridItem = document.createElement('div');
         gridItem.classList.add('grid-item');
 
-        const img = new Image();
+        const img = document.createElement('img');
         img.src = item.images[0];
-        console.log(img.src);
         img.alt = item.title;
         img.dataset.id = item.id;
         img.loading = "lazy";
 
-        img.onload = function () {
-            console.log("Image chargée :", img.src);
-            gridItem.appendChild(img);
-        };
+        img.addEventListener('load', function() {
+            adjustGridItemSize(gridItem, img);
+        });
 
-        img.onerror = function () {
-            console.error("Erreur de chargement de l'image :", img.src);
-            img.src = 'icones/image-placeholder.png';
-        };
+        img.addEventListener('error', function() {
+            console.error('Erreur de chargement de l\'image:', img.src);
+        });
+
+        gridItem.innerHTML = `
+            <img src="${item.images[0]}" alt="${item.title}" data-id="${item.id}" loading="lazy">
+            <div class="infos">
+                <h2>${item.title}</h2>
+                <div class="infos-buttons">
+                    <a class="info-btn" href="details.html?image=${item.id}">
+                        <img src="icones/ic--sharp-info-light.png" alt="Info">
+                    </a>
+                    <a class="extend-btn" href="#">
+                        <img src="icones/system-uicons--scale-extend-light.png" alt="Extend">
+                    </a>
+                </div>
+            </div>
+        `;
 
         return gridItem;
     }
 
-    yearSelect.addEventListener('change', () => {
-        displayImagesByYear(yearSelect.value);
-    });
+    function adjustGridItemSize(gridItem, img) {
+        const aspectRatio = img.naturalWidth / img.naturalHeight;
+        if (aspectRatio > 2) {
+            gridItem.classList.add('grid-item-large');
+        } else if (aspectRatio < 1) {
+            gridItem.classList.add('grid-item-tall');
+        }
+    }
 
-    displayImagesByYear(yearSelect.value);
+    function adjustGridItemSizes() {
+        const images = document.querySelectorAll('.grid-item img');
+        images.forEach(img => {
+            if (img.complete) {
+                adjustGridItemSize(img.closest('.grid-item'), img);
+            } else {
+                img.addEventListener('load', function() {
+                    adjustGridItemSize(img.closest('.grid-item'), img);
+                });
+            }
+        });
+    }
+
+    function initModals() {
+        document.querySelectorAll('.extend-btn').forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                const imgSrc = event.target.closest('.grid-item').querySelector('img').src;
+                modalImg.src = imgSrc;
+                modal.style.display = 'flex';
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    }
 });
