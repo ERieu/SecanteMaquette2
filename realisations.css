@@ -40,7 +40,11 @@ header h1 {
 }
 
 #year-selector select {
-  font-size: 20px;
+  text-align: center;
+  font-size: 24px;
+  background-color: #dddddd;
+  border: none;
+  border-radius: 8px;
 }
 
 .grid {
