@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         const img = new Image();
         img.src = item.images[0];
+        console.log(img.src);
         img.alt = item.title;
         img.dataset.id = item.id;
         img.loading = "lazy";
