@@ -4,7 +4,7 @@
         "year": "2024",
         "title": "1er étage de la Tour Eiffel",
         "place": "Paris",
-        "images": ["images/tourEiffel1.jpg", "images/tourEiffel2.jpg", "images/tourEiffel3.jpg", "images/tourEiffel4.jpg", "images/tourEiffel5.jpg", "images/tourEiffel6.jpg"]
+        "images": ["images/tourEiffel1.webp", "images/tourEiffel2.webp", "images/tourEiffel3.webp", "images/tourEiffel4.webp", "images/tourEiffel5.webp", "images/tourEiffel6.webp"]
     },
     {
         "id": "guerlain",
@@ -15,7 +15,7 @@
         "lighting_engineer":"L'OBSERVATOIRE INTERNATIONAL",
         "installater": "MELLOT",
         "lighting_type": "Eclairage intérieur",
-        "images": ["images/guerlain1.jpg", "images/guerlain2.jpg", "images/guerlain3.jpg", "images/guerlain4.jpg"]
+        "images": ["images/guerlain1.webp", "images/guerlain2.webp", "images/guerlain3.webp", "images/guerlain4.webp"]
     },
     {
         "id": "bayerischer-hof",
@@ -26,18 +26,18 @@
         "prime_contractor": "PATRICK JONIN",
         "lighting_engineer": "L'OBSERVATOIRE INTERNATIONAL",
         "lighting_type": "Eclairage intérieur",
-        "images": ["images/bayerischerHof1.jpg", "images/bayerischerHof2.jpg", "images/bayerischerHof3.png", "images/bayerischerHof4.png", "images/bayerischerHof5.png"]
+        "images": ["images/bayerischerHof1.webp", "images/bayerischerHof2.webp", "images/bayerischerHof3.webp", "images/bayerischerHof4.webp", "images/bayerischerHof5.webp"]
     },
     {
         "id": "connaught-hotel",
         "year": "2021",
         "title": "The Connaught Hotel",
-        "images": ["images/connaughtHotel1.png", "images/connaughtHotel2.png", "images/connaughtHotel3.png"]
+        "images": ["images/connaughtHotel1.webp", "images/connaughtHotel2.webp", "images/connaughtHotel3.webp"]
     },
     {
         "id": "symphonieOfTheSea",
         "title": "Symphonie of the Sea",
-        "images": ["images/symphonieOfTheSea1.png", "images/symphonieOfTheSea2.png", "images/symphonieOfTheSea3.png", "images/symphonieOfTheSea4.png", "images/symphonieOfTheSea4.png", "images/symphonieOfTheSea5.png", "images/symphonieOfTheSea6.png", "images/symphonieOfTheSea7.png", "images/symphonieOfTheSea8.png"]
+        "images": ["images/symphonieOfTheSea1.webp", "images/symphonieOfTheSea2.webp", "images/symphonieOfTheSea3.webp", "images/symphonieOfTheSea4.webp", "images/symphonieOfTheSea4.webp", "images/symphonieOfTheSea5.webp", "images/symphonieOfTheSea6.webp", "images/symphonieOfTheSea7.webp", "images/symphonieOfTheSea8.webp"]
     },
     {
         "id": "mediathequeSaint-malo",
@@ -46,7 +46,7 @@
         "place": "Saint-Malo",
         "lighting-engineer": "8/18",
         "installater": "CEGELEC",
-        "images": ["images/mediathequeSaint-malo1(818_SML1_CHANTIER_Photos 02_Copyright David Charetier).jpg", "images/mediathequeSaint-malo2.jpg", "images/mediathequeSaint-malo3.jpg", "images/mediathequeSaint-malo4.jpg"]
+        "images": ["images/mediathequeSaint-malo1(818_SML1_CHANTIER_Photos 02_Copyright David Charetier).webp", "images/mediathequeSaint-malo2.webp", "images/mediathequeSaint-malo3.webp", "images/mediathequeSaint-malo4.webp"]
     },
     {
         "id": "holiday-inn",
@@ -56,7 +56,7 @@
         "lighting_engineer": "OUAM",
         "installater": "EIFFAGE",
         "lighting_type": "Eclairage intérieur et extérieur",
-        "images": ["images/holiday-inn-express-paris-2532450872-4x3.jpg"]
+        "images": ["images/holiday-inn-express-paris-2532450872-4x3.webp"]
     },
     {
         "id": "louis-vuitton-doha",
@@ -64,13 +64,13 @@
         "title": "Louis Vuitton",
         "place": "Doha",
         "descritption": "",
-        "images": ["images/LV-doha1.jpg", "images/LV-doha2.jpg", "images/LV-doha3.jpg", "images/LV-doha4.jpg", "images/LV-doha5.jpg"]
+        "images": ["images/LV-doha1.webp", "images/LV-doha2.webp", "images/LV-doha3.webp", "images/LV-doha4.webp", "images/LV-doha5.webp"]
     },
     {
         "id": "carre-senart",
         "title": "Carré Sénart",
         "description": "Carré Sénart est un centre commercial situé à Lieusaint, en France.",
-        "images": ["images/CARRE SENART 1.JPG", "images/CARRE SENART 2.JPG", "images/CARRE SENART 3.JPG", "images/CARRE SENART 4.JPG"]
+        "images": ["images/CARRE SENART 1.webp", "images/CARRE SENART 2.webp", "images/CARRE SENART 3.webp", "images/CARRE SENART 4.webp"]
     },
     {
         "id": "historial-charles-de-gaulle",
@@ -82,7 +82,7 @@
         "lighting_engineer": "8/18",
         "installater": "EI",
         "lighting_type":"Eclairage intérieur",
-        "images": ["images/Historial-Charles-de-Gaulle_Paris(1).jpg", "images/Historial-Charles-de-Gaulle_Paris(2).jpg"]
+        "images": ["images/Historial-Charles-de-Gaulle_Paris(1).webp", "images/Historial-Charles-de-Gaulle_Paris(2).webp"]
     },
     {
         "id": "fondation-louis-vuitton",
@@ -93,7 +93,7 @@
         "creator": "TACTILE STUDIO",
         "lighting_engineer": "OBS NY",
         "lighting_type": "Eclairage intérieur",
-        "images": ["images/maquette-LV-1024x768.jpg"]
+        "images": ["images/maquette-LV-1024x768.webp"]
     },
     {
         "id": "frederic-malle",
@@ -101,20 +101,20 @@
         "place": "Londre",
         "description": "Un parfumeur iconoclaste et des architectes audacieux : Frédéric Malle et Jakob+MacFarlane ont uni leurs talents pour ouvrir cette quatrième adresse parisienne. Secante réalise les luminaires. …une expérience spatiale aux délicieuses fragrances.",
         "lighting_type": "Eclairage intérieur",
-        "images": ["images/fredericMalle1.png", "images/fredericMalle2.png", "images/fredericMalle3.png", "images/fredericMalle4.png", "images/fredericMalle5.png", "images/fredericMalle6.png"]
+        "images": ["images/fredericMalle1.webp", "images/fredericMalle2.webp", "images/fredericMalle3.webp", "images/fredericMalle4.webp", "images/fredericMalle5.webp", "images/fredericMalle6.webp"]
     },
     {
         "id": "louis-vuitton-londre",
         "title": "Louis Vuitton",
         "place": "Londre",
         "description": "",
-        "images": ["images/LV-new-bond-street1.jpg", "images/LV-new-bond-street2.jpg", "images/LV-new-bond-street3.jpg", "images/LV-new-bond-street4.jpg"]
+        "images": ["images/LV-new-bond-street1.webp", "images/LV-new-bond-street2.webp", "images/LV-new-bond-street3.webp", "images/LV-new-bond-street4.webp"]
     },
     {
         "id": "groupe-foyer",
         "title": "Groupe Foyer",
         "place": "Luxembourg",
-        "images": ["images/groupeFoyer1.png", "images/groupeFoyer2.png", "images/groupeFoyer3.png", "images/groupeFoyer4.png"]
+        "images": ["images/groupeFoyer1.webp", "images/groupeFoyer2.webp", "images/groupeFoyer3.webp", "images/groupeFoyer4.webp"]
     },
     {
         "id": "les-haras",
@@ -124,7 +124,7 @@
         "lighting_engineer": "L'OBSERVATOIRE INTERNATIONAL",
         "installater": "STUDIO",
         "lighting_type": "Eclairage intérieur",
-        "images": ["images/lesHaras1.jpg", "images/lesHaras2.jpg", "images/lesHaras3.jpg"]    
+        "images": ["images/lesHaras1.webp", "images/lesHaras2.webp", "images/lesHaras3.webp"]    
     },
     {
         "id": "louisXV-AD",
@@ -134,7 +134,7 @@
         "lighting_engineer": "L'OBSERVATOIRE INTERNATIONAL",
         "installater": "MES",
         "lighting_type": "Eclairage intérieur",
-        "images": ["images/Alain-Ducasse-Hôtel-de-Paris-PierreMonetta-1200x1800.jpg", "images/ducasse2.jpg"]
+        "images": ["images/Alain-Ducasse-Hôtel-de-Paris-PierreMonetta-1200x1800.webp", "images/ducasse2.webp"]
     },
     {
         "id": "philharmonie-paris",
@@ -145,13 +145,13 @@
         "lighting_engineer": "L'OBSERVATOIRE INTERNATIONAL",
         "installater": "INEO",
         "lighting_type":"Eclairage intérieur",
-        "images": ["images/philharmonieParis1.jpg", "images/philharmonieParis2.JPG", "images/philharmonieParis3.JPG", "images/philharmonieParis4.jpg"]
+        "images": ["images/philharmonieParis1.webp", "images/philharmonieParis2.webp", "images/philharmonieParis3.webp", "images/philharmonieParis4.webp"]
     },
     {
         "id": "abbaye-fontevrault",
         "year": "2021",
         "title": "Abbaye de Fontevrault",
-        "images": ["images/abbayeFontevrault1.png", "images/abbayeFontevrault2.png", "images/abbayeFontevrault3.png"]
+        "images": ["images/abbayeFontevrault1.webp", "images/abbayeFontevrault2.webp", "images/abbayeFontevrault3.webp"]
     },
     {
         "id": "le-bon-marche",
@@ -160,21 +160,21 @@
         "place": "Paris",
         "lighting-engineer": "DISTYLIGHT",
         "installater": "MBA",
-        "images": ["images/leBonMarche1.png", "images/leBonMarche2.png", "images/leBonMarche3.png", "images/leBonMarche4.png"]
+        "images": ["images/leBonMarche1.webp", "images/leBonMarche2.webp", "images/leBonMarche3.webp", "images/leBonMarche4.webp"]
     },
     {
         "id": "lv-shangai",
         "year": "2020",
         "title": "Louis Vuitton",
         "place": "Shangai",
-        "images": ["images/lv-shangai1.png", "images/lv-shangai2.png", "images/lv-shangai3.png", "images/lv-shangai4.png"]
+        "images": ["images/lv-shangai1.webp", "images/lv-shangai2.webp", "images/lv-shangai3.webp", "images/lv-shangai4.webp"]
     },
     {
         "id": "parc-des-princes",
         "year": "2020",
         "title": "Parc des princes",
         "place": "Paris",
-        "images": ["images/parc-des-princes.jpg"]
+        "images": ["images/parc-des-princes.webp"]
     },
     {
         "id": "dior-nw",
@@ -186,13 +186,13 @@
         "lighting_engineer": "L'OBSERVATOIRE INTERNATIONAL",
         "installater": "IDW",
         "lighting_type": "Eclairage intérieur",
-        "images": ["images/dior-nw1.jpg", "images/dior-nw2.jpg", "images/dior-nw3.jpg"]
+        "images": ["images/dior-nw1.webp", "images/dior-nw2.webp", "images/dior-nw3.webp"]
     },
     {
         "id": "lv-istanbul",
         "year": "2022",
         "title": "Louis Vuitton",
         "place": "Istanbul",
-        "images": ["images/lv-istanbul1.jpg", "images/lv-istanbul2.jpg"]
+        "images": ["images/lv-istanbul1.webp", "images/lv-istanbul2.webp"]
     }
 ]
