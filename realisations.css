@@ -125,6 +125,10 @@ header h1 {
   padding: 5px;
 }
 
+.no-click {
+  pointer-events: none;
+}
+
 .modal {
   display: none;
   position: fixed;
