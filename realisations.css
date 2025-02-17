@@ -166,15 +166,3 @@ header h1 {
       grid-row: span 1;
   }
 }
-
-.skeleton {
-  background: #e0e0e0;
-  border-radius: 5px;
-  animation: pulse 1.2s infinite ease-in-out;
-}
-
-@keyframes pulse {
-  0% { opacity: 0.6; }
-  50% { opacity: 1; }
-  100% { opacity: 0.6; }
-}
